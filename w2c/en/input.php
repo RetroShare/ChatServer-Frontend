@@ -10,6 +10,7 @@
 
 	<?php
 		//echo sqlite_libversion();
+		//echo $lang[0];
 		//echo "<br>";
 		//echo phpversion();
 		//include 'manage_db_auto_clean.php';

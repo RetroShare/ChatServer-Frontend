@@ -8,13 +8,13 @@
  
 	<body>
 		<?php //ini_set('display_errors', 'on'); error_reporting(E_ALL);
-		
+			//THIS version is DEVOID of SQLITE and IP CHECKING. --Jenster 01/16/12		
 			// Open config file
 			$file_config = parse_ini_file("../config.ini") or die("Can't open config file");
 			$nogui_path = $file_config['nogui_path'];
-			
+			$error = 0 ;
 			// Get the key
-			$key = sqlite_escape_string(trim(preg_replace('/--LOCAL--.*/','', $_POST['key'])));
+			$key = trim(preg_replace('/--LOCAL--.*/','', $_POST['key']));
 			$key_sha1 = hash('sha1', $key);
 			$time = time();
 			
@@ -66,37 +66,11 @@
 			// -------------------------
 			// Check IP
 			// -------------------------
-			$chk_ip = false;
 			
-			// Open database
-			$dbhandle = sqlite_open('../data/keys.db', 0640, $error);
-			if (!$dbhandle) die ($error);
-			
-			// Delete old enries
-			$stm = "DELETE FROM IPs WHERE date + 600 < $time";
-			$ok = sqlite_exec($dbhandle, $stm);
-			if (!$ok) die("Impossible to remove an entry.\n");
-			
-			$query = "SELECT date FROM IPs WHERE ip == '$IP'";
-			$result = sqlite_query($dbhandle, $query);
-			if (!$result) die("Cannot execute query.");
-			
-			if (sqlite_num_rows($result) == 0) {
-				$chk_ip = true;
-				sqlite_close($dbhandle);
-				
-			}
-			else {
-				$row = sqlite_fetch_array($result, SQLITE_ASSOC);
-				echo "This service is limited to one key every 10 minutes. Please try again in ", ceil((($row['date'] + 600) - $time)/60), " minutes." ;
-				sqlite_close($dbhandle);
-				exit();
-			}
-
 			// -------------------------
 			// Now we can process
 			// -------------------------
-			if($chk_securimage and $chk_ip and $chk_key) {
+			if($chk_securimage and $chk_key) {
 
 				// Write key in the NEWCERTS folder
 				$file_sha1 = fopen($nogui_path."/NEWCERTS/".$key_sha1.".rsc", 'w') or die("Can't open file");
@@ -114,7 +88,7 @@
 				echo "<a href=\"".$server_url."\">Add chat server</a><br/>\n";
 
 				//Print key
-				echo "In cas of problems, add manually the following key:";				
+				echo "In case of problems, add manually the following key:";				
 				echo "<form name=\"select_all\">";
 				echo "<p><textarea name=\"key_area\" rows=\"25\" cols=\"80\" readonly=\"readonly\">".$server_key."</textarea></p>";
 				echo "<p><input type=\"button\" value=\"Select key\" onClick=\"javascript:this.form.key_area.focus();this.form.key_area.select();\"></p>";
@@ -123,12 +97,7 @@
 				echo "In a few minutes, your new friend (CHAT SERVER) should be online. You will be able to access the chat lobbies and start making friends. The actual chat lobby is <strong>".$server_num."</strong>.";
 				
 				// Store IP
-				$dbhandle = sqlite_open('../data/keys.db', 0640, $error);
-				if (!$dbhandle) die ($error);
-				$stm = "INSERT INTO IPs VALUES('$IP', $time)";
-				$ok = sqlite_exec($dbhandle, $stm);
-				if (!$ok) die("Info: impossible to add your IP address to the database.<br/>\n");
-				sqlite_close($dbhandle);
+				
 			}
 			
 		?>
