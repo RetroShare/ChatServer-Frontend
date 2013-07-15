@@ -15,17 +15,17 @@
 014[ Different Image ]
 015Envoyer
 016Can't open File
-017Your Key is not correct! Copy-paste your ENTIRE KEY, including -----BEGIN PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID-- and --LOCATION--.
+017 Clé incorrecte ! Faites un copier-coller de l'INTEGRALITE de votre cle, en incluant les lignes -----BEGIN PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID-- et --LOCATION--.
 018Please go
 019back
 020and try again.
-021The captcha code is incorrect!
-022Click on the following link to add the chat server:
-023Add chat server
-024In case of problems, add manually the following key:
-025In a few minutes, your new friend (CHAT SERVER) should be online. You will be able to access the chat lobbies and start making friends.
-026The actual chat lobby is
-027Select all
+021Code de sécurité incorrect !
+022Cliquez sur le lien suivant pour ajouter la clé du serveur de chat :
+023Ajouter le serveur de chat
+024En cas de problème, ajoutez manuellement cette clé :
+025D'ici quelques minutes, votre nouvel ami (CHAT SERVER) devrait être en ligne. A partir de ce moment, vous pouvez accéder au chat et discuter avec d'autres utilisateurs pour avoir de nouveaux amis.
+026Le chat est 
+027Sélectionner la clé
 028
 029
 030
