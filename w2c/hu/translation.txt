@@ -1,31 +1,31 @@
 000RetroShare Csetszerver
-001Ez az eszköz arra szolgál, hogy segítsen neked kulcsot cserélni  másokkal. Hozzáférést ad a csetszobákhoz, hogy új barátokat tudj szerezni.
+001Ez az eszköz arra szolgál, hogy segítsen neked kulcsot cserélni másokkal. Hozzáférést biztosít a csetszobákhoz, hogy új barátokat tudj szerezni.
 002Rövid útmutató
-003Add meg a RetroShare kulcsodat.
-004A következő lapon, hozzáférést kapsz a csetszerver kulcsához, ami  hozzáférést biztosít a csetszobákhoz, ahol megtalálható a közösség többi  tagja, akik csetelnek éppen.
+003Add meg a RetroShare kulcsodat!
+004A következő lapon hozzáférést kapsz a csetszerver kulcsához, amivel hozzá tudsz férni a csetszobákhoz, ahol megtalálható a közösség többi tagja, akik már csetelnek éppen.
 005Beszélgess másokkal és cseréljetek kulcsot!
 006
 007
 008
-009v
+009
 010
 011Regisztráld a kulcsod
 012RetroShare kulcs:
 013Kapcsa:
 014[ Másik kép ]
-015Erveniesit
-016Can't open File
-017Your  Key is not correct! Copy-paste your ENTIRE KEY, including -----BEGIN  PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID--  and --LOCATION--.
-018Please go
-019back
-020and try again.
-021The captcha code is incorrect!
-022Click on the following link to add the chat server:
-023Add chat server
-024In case of problems, add manually the following key:
-025In  a few minutes, your new friend (CHAT SERVER) should be online. You will  be able to access the chat lobbies and start making friends.
-026The actual chat lobby is
-027Select all
+015Érvényesít
+016Nem lehet megnyitni a fájlt
+017Probléma akadt a kulcsoddal! A teljes kulcsodat másold ide, ami tartalmazza ezeket is:  -----BEGIN  PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID--  és --LOCATION--.
+018Kérlek lépj egyet
+019vissza
+020és próbáld meg újra!
+021A beírt kapcsa pontatlan!
+022Kattints a következő linkre a csetszerver hozzáadásához:
+023Csetszerver hozzáadása
+024Probléma esetén, add hozzá kkézzel az alábbi kulcsot:
+025Pár perc múlva az új barátodnak (CHAT SERVER) elérhetőnek kell lennie. Hozzá fogsz férni a csetszobákhoz, ahol elkezdhetsz barátkozni.
+026Az aktuális csetszoba:
+027Összes kijelölése
 028
 029
 030
