@@ -1,54 +1,68 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" >
 
 <head>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" type="text/css" href="../css/style.css" />
-	<title>Serveur de discussion - Nouvelle Clé</title>
+	<meta charset="utf-8">
+	<title>RetroShare Chat Server - Schl&uuml;sselaustausch</title>
 </head>
 
 <body>
-	<div class="content">
-		<?php
-			//echo sqlite_libversion();
-			//echo "<br>";
-			//echo phpversion();
-			//include 'manage_db_auto_clean.php';
-		?>
 
-		<h1>Serveur de discussion RetroShare</h1>
+<?php
+        $translation = file('translation.txt', FILE_IGNORE_NEW_LINES);
+        $transcount = count($translation);
+        for ($i = 0; $i < $transcount; $i++) {
+                $translation[$i] = substr($translation[$i], 3);
+                }
+?>
+	<h1 style="text-align: center;"><?php echo $translation[0] ; ?> </h1>
+		<p><?php echo $translation[1] ?></p>
+		
 
-			<p>Cet outil vous est proposé pour faciliter l'échange de clés RetroShare. Il vous permettra de vous connecter à des salons de chat pour vous faire des amis.</p>
+	<h2><?php echo $translation[2] ?></h2>
 
-		<h2>Mode de fonctionnement</h2>
+		<ol>
+			<?php 
+				if(!($translation[3] == NULL)) { 
+				echo "<li>" . $translation[3] . "</li>" ;
+				}
+                                if(!($translation[4] == NULL)) { 
+                                echo "<li>" . $translation[4] . "</li>" ;
+                                }
+                                if(!($translation[5] == NULL)) { 
+                                echo "<li>" . $translation[5] . "</li>" ;
+                                }
+                                if(!($translation[6] == NULL)) { 
+                                echo "<li>" . $translation[6] . "</li>" ;
+                                }
+                                if(!($translation[7] == NULL)) { 
+                                echo "<li>" . $translation[7] . "</li>" ;
+                                }
+                                if(!($translation[8] == NULL)) { 
+                                echo "<li>" . $translation[8] . "</li>" ;
+                                }
+                                if(!($translation[9] == NULL)) { 
+                                echo "<li>" . $translation[9] . "</li>" ;
+                                }
+				if(!($translation[10] == NULL)) {
+                                echo "<li>" . $translation[10] . "</li>" ;
+                                }
+			?>
+		</ol>
 
-			<ol>
-				<li> Vous entrez votre clé RetroShare.</li>
-				<li> Sur la page suivante, vous aurez accès à la clé du serveur de chat qui vous permettra d'être mis en contact avec d'autres membres de la communauté.</li>
-				<li> Discutez avec les autres utilisateurs et échangez votre clé ! </li>
-			</ol>
+	<hr style="width: 60%; height: 2px;"></hr>
 
-		<h2>Enregistrement d'une nouvelle clé</h2>
-
-		<form class="contact_form" action="#" method="post" name="contact_form">
-			<ul>
-				<li>
-					 <span class="required_notification">* champs obligatoire</span>
-				</li>
-				<li>
-					<label for="message">Clé RetroShare :</label>
-					<textarea name="message" placeholder="Collez votre clé ici" cols="85" rows="10" required ></textarea>
-				</li>
-				<li>
-					<img id="captcha" src="../securimage/securimage_show.php" alt="CAPTCHA Image"></img><a class="tip" href="#" onclick="document.getElementById('captcha').src = '../securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
-					<input name="captcha_code" placeholder="Recopiez le code ici" required size="10" maxlength="6" type="text"></input>    
-				</li>
-				<li>
-					<button class="submit" type="submit">Envoyer</button>
-				</li>
-			</ul>
+	<h2><?php echo $translation[11] ?></h2>
+		<form method="post" action="process.php" name="process">
+			<fieldset>
+				<table border='0'>
+				<tr><td valign="top"><?php echo $translation[12] ?></td><td><textarea name="key" rows="10" cols="85"></textarea></td></tr>
+				<tr><td><?php echo $translation[13] ?><br/><img id="captcha" src="../securimage/securimage_show.php" alt="CAPTCHA Image"></img></td><td><input name="captcha_code" size="10" maxlength="6" type="text"></input><a href="#" onclick="document.getElementById('captcha').src = '../securimage/securimage_show.php?' + Math.random(); return false"><?php echo $translation[14] ?></a></td></tr>
+				</table>
+				<input value="<?php echo $translation[15] ?>" type="submit"></input>
+			</fieldset>
 		</form>
-	</div>
+
 </body>
 
 </html>

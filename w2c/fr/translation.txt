@@ -1,0 +1,36 @@
+000Serveur de discussion RetroShare
+001Cet outil vous est proposé pour faciliter l'échange de clés RetroShare. Il vous permettra de vous connecter à des salons de chat pour vous faire des amis.
+002Mode de fonctionnement
+003Vous entrez votre clé RetroShare.
+004Sur la page suivante, vous aurez accès à la clé du serveur de chat qui vous permettra d'être mis en contact avec d'autres membres de la communauté.
+005Discutez avec les autres utilisateurs et échangez votre clé !
+006
+007
+008
+009
+010
+011Enregistrement d'une nouvelle clé
+012champs obligatoire
+013Captcha Code:
+014[ Different Image ]
+015Envoyer
+016Can't open File
+017Your Key is not correct! Copy-paste your ENTIRE KEY, including -----BEGIN PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID-- and --LOCATION--.
+018Please go
+019back
+020and try again.
+021The captcha code is incorrect!
+022Click on the following link to add the chat server:
+023Add chat server
+024In case of problems, add manually the following key:
+025In a few minutes, your new friend (CHAT SERVER) should be online. You will be able to access the chat lobbies and start making friends.
+026The actual chat lobby is
+027Select all
+028
+029
+030
+031
+032
+033
+034
+035
