@@ -1,0 +1,36 @@
+000RetroShare Csetszerver
+001Ez az eszköz arra szolgál, hogy segítsen neked kulcsot cserélni  másokkal. Hozzáférést ad a csetszobákhoz, hogy új barátokat tudj szerezni.
+002Rövid útmutató
+003Add meg a RetroShare kulcsodat.
+004A következő lapon, hozzáférést kapsz a csetszerver kulcsához, ami  hozzáférést biztosít a csetszobákhoz, ahol megtalálható a közösség többi  tagja, akik csetelnek éppen.
+005Beszélgess másokkal és cseréljetek kulcsot!
+006
+007
+008
+009v
+010
+011Regisztráld a kulcsod
+012RetroShare kulcs:
+013Kapcsa:
+014[ Másik kép ]
+015Erveniesit
+016Can't open File
+017Your  Key is not correct! Copy-paste your ENTIRE KEY, including -----BEGIN  PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID--  and --LOCATION--.
+018Please go
+019back
+020and try again.
+021The captcha code is incorrect!
+022Click on the following link to add the chat server:
+023Add chat server
+024In case of problems, add manually the following key:
+025In  a few minutes, your new friend (CHAT SERVER) should be online. You will  be able to access the chat lobbies and start making friends.
+026The actual chat lobby is
+027Select all
+028
+029
+030
+031
+032
+033
+034
+035
