@@ -1,0 +1,36 @@
+000RetroShare Chat Server
+001Questo tool ti aiuterà a condividere la tua chiave RetroShare. Ti darà anche accesso ad alcune chat lobbies permettendoti di fare nuovi amici.
+002Piccola introduzione
+003Inserisci la tu chiave RetroShare.
+004 Nella pagina successiva riceverai la chiave del chat server, che ti permetterà l'accesso alle varie chat lobbies dove gli altri membri della comunity stanno già chattando.
+005Chatta con gli altri, e scambia la tua chiave!
+006
+007
+008
+009
+010
+011Registra una nuova chiave
+012RetroShare key:
+013Captcha code:
+014[ Rigenera captcha ]
+015Validate
+016Can't open File
+017Your Key is not correct! Copy-paste your ENTIRE KEY, including -----BEGIN PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID-- and --LOCATION--.
+018Please go
+019back
+020and try again.
+021The captcha code is incorrect!
+022Click on the following link to add the chat server:
+023Add chat server
+024In case of problems, add manually the following key:
+025In a few minutes, your new friend (CHAT SERVER) should be online. You will be able to access the chat lobbies and start making friends.
+026The actual chat lobby is
+027Select all
+028
+029
+030
+031
+032
+033
+034
+035
