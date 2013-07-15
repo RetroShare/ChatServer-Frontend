@@ -10,22 +10,22 @@
 009
 010
 011Enregistrement d'une nouvelle clé
-012champs obligatoire
-013Captcha Code:
-014[ Different Image ]
-015Envoyer
-016Can't open File
-017 Clé incorrecte ! Faites un copier-coller de l'INTEGRALITE de votre cle, en incluant les lignes -----BEGIN PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID-- et --LOCATION--.
-018Please go
-019back
-020and try again.
-021Code de sécurité incorrect !
-022Cliquez sur le lien suivant pour ajouter la clé du serveur de chat :
+012Clé RetroShare :
+013Code Captcha:
+014[ Autre image ]
+015Valider
+016Ouverture de fichier impossible
+017Clé incorrecte ! Faites un copier-coller de l'INTEGRALITE de votre cle, en incluant les lignes -----BEGIN PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID-- et --LOCATION--.
+018En avant
+019en arrière
+020et essayer à nouveau.
+021Code Captcha incorrect !
+022Cliquez sur le lien suivant pour ajouter le serveur de chat :
 023Ajouter le serveur de chat
 024En cas de problème, ajoutez manuellement cette clé :
-025D'ici quelques minutes, votre nouvel ami (CHAT SERVER) devrait être en ligne. A partir de ce moment, vous pouvez accéder au chat et discuter avec d'autres utilisateurs pour avoir de nouveaux amis.
-026Le chat est 
-027Sélectionner la clé
+025D'ici quelques minutes, votre nouvel ami (CHAT SERVER) devrait être en ligne. A partir de ce moment, vous pourrez accéder au chat et discuter pour vous faire de nouveaux amis.
+026Le salon de chat courant est 
+027Sélectionner tout
 028
 029
 030
