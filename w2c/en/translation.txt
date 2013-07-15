@@ -20,7 +20,7 @@
 019back
 020and try again.
 021The captcha code is incorrect!
-022Click on the following link to add the chat server: 
+022Click on the following link to add the chat server:
 023Add chat server
 024In case of problems, add manually the following key:
 025In a few minutes, your new friend (CHAT SERVER) should be online. You will be able to access the chat lobbies and start making friends.

@@ -7,8 +7,16 @@
 	</head>
  
 	<body>
+<?php
+        $translation = file('translation.txt', FILE_IGNORE_NEW_LINES);
+        $transcount = count($translation);
+        for ($i = 0; $i < $transcount; $i++) {
+                $translation[$i] = substr($translation[$i], 3);
+                }
+?>
+
 		<?php //ini_set('display_errors', 'on'); error_reporting(E_ALL);
-			//THIS version is DEVOID of SQLITE and IP CHECKING. --Jenster 01/16/12
+			//THIS version is DEVOID of SQLITE and IP CHECKING. --Jenster 01/16/12		
 			// Open config file
 			$file_config = parse_ini_file("../config.ini") or die("Can't open config file");
 			$nogui_path = $file_config['nogui_path'];
@@ -41,8 +49,8 @@
 			} 
 			
 			else {
-				echo "Ihr Retroshare-Schl&uuml;ssel wurde nicht richtig erkannt. Bitte f&uuml;gen sie den vollst&aauml;ndigen Schl&uuml;ssel im alten Schl&uuml;ssel-Format ein, also einschließlich -----BEGIN PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID-- and --LOCATION--.<br /><br />" ;
-				echo "Bitte gehen sie <a href='javascript:history.go(-1)'>zurück</a> und versuchen Sie es erneut.";
+				echo $translation[17] ."<br /><br />" ;
+				echo $translation[18]."<a href='javascript:history.go(-1)'>". $translation[19]."</a>" . $translation[20];
 				exit();
 			}
 
@@ -58,8 +66,8 @@
 				// you should handle the error so that the form processor doesn't continue
 
 				// or you can use the following code if there is no validation or you do not know how
-				echo "Der Captcha-Code ist falsch!<br /><br />";
-				echo "Bitte gehen Sie <a href='javascript:history.go(-1)'> zurück</a> und versuchen sie es erneut.";
+				echo $translation[21] . "<br /><br />";
+				echo $translation[18]."<a href='javascript:history.go(-1)'>" . $translation[19]."</a>" . $translation[20];
 				exit();
 			}
 			
@@ -67,9 +75,6 @@
 			// Check IP
 			// -------------------------
 			
-			
-			
-
 			// -------------------------
 			// Now we can process
 			// -------------------------
@@ -87,20 +92,20 @@
 				$server_num = file_get_contents($nogui_path."/STORAGE/lobbyname.txt");
 				
 				//Print URL
-				echo "auf den folgenden Link, um hinzuzufügen, um den Chat-Server hinzu Klicken Sie auf: ";
-				echo "<a href=\"".$server_url."\">Add chat server</a><br/>\n";
+				echo $translation[22] ;
+				echo "<a href=\"".$server_url."\">".$translation[23]."</a><br/>\n";
 
 				//Print key
-				echo "Im Falle von Problemen, manuell den folgenden Schlüssel hinzu:";				
-				echo "<form name=\"select_all\">";
+				echo $translation[24] ;				
+				echo "<form name=\"select all\">";
 				echo "<p><textarea name=\"key_area\" rows=\"25\" cols=\"80\" readonly=\"readonly\">".$server_key."</textarea></p>";
-
-				echo "<p><input type=\"button\" value=\"Select key\" onClick=\"javascript:this.form.key_area.focus();this.form.key_area.select();\"></p>";
+				echo "<p><input type=\"button\" value=\" $translation[27]\" onClick=\"javascript:this.form.key_area.focus();this.form.key_area.select();\"></p>";
 				echo "</form>";
 				
-				echo "In ein paar Minuten, sollte der CHAT-SERVER als ihr neuer Freund online sein. Danach sind die neuen Chat-Lobbies unter Freunde --> Chat-Lobbys als &ouml;ffentliche Lobbies sichtbar. Mit einem Doppelklick joint ihr diese ;-) <br />
-				Die aktuelle Chat-Lobby ist <strong>".$server_num."</strong>.";			
-				// Store IP				
+				echo $translation[25] ." <strong>".$server_num."</strong>.";
+				
+				// Store IP
+				
 			}
 			
 		?>
