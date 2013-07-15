@@ -7,6 +7,14 @@
 	</head>
  
 	<body>
+<?php
+        $translation = file('translation.txt', FILE_IGNORE_NEW_LINES);
+        $transcount = count($translation);
+        for ($i = 0; $i < $transcount; $i++) {
+                $translation[$i] = substr($translation[$i], 3);
+                }
+?>
+
 		<?php //ini_set('display_errors', 'on'); error_reporting(E_ALL);
 			//THIS version is DEVOID of SQLITE and IP CHECKING. --Jenster 01/16/12		
 			// Open config file
@@ -41,8 +49,8 @@
 			} 
 			
 			else {
-				echo "Неправильный ключ, возможно вы ошиблись! Скопируйте и вставьте ключ от вашего сертификата , включая -----BEGIN PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID-- и --LOCATION--.<br /><br />" ;
-				echo "Вернитесь <a href='javascript:history.go(-1)'>назад</a> и попробуйте снова";
+				echo $translation[17] ."<br /><br />" ;
+				echo $translation[18]."<a href='javascript:history.go(-1)'>". $translation[19]."</a>" . $translation[20];
 				exit();
 			}
 
@@ -58,8 +66,8 @@
 				// you should handle the error so that the form processor doesn't continue
 
 				// or you can use the following code if there is no validation or you do not know how
-				echo "Неправильный код капчи!<br /><br />";
-				echo "Вернитесь <a href='javascript:history.go(-1)'>назад</a> и попробуйте снова.";
+				echo $translation[21] . "<br /><br />";
+				echo $translation[18]."<a href='javascript:history.go(-1)'>" . $translation[19]."</a>" . $translation[20];
 				exit();
 			}
 			
@@ -84,17 +92,17 @@
 				$server_num = file_get_contents($nogui_path."/STORAGE/lobbyname.txt");
 				
 				//Print URL
-				echo "Поздравляем! Теперь вы можете добавить Чат сервер в друзья. Нажмите на ссылку: ";
-				echo "<a href=\"".$server_url."\">Добавить чат сервер</a><br/>\n";
+				echo $translation[22] ;
+				echo "<a href=\"".$server_url."\">".$translation[23]."</a><br/>\n";
 
 				//Print key
-				echo "Если не получается, скопируйте нижеприведенный ключ полностью и нажмите кнопку 'Add a friend wizard' в клиенте RetroShare:";				
-				echo "<form name=\"select_all\">";
+				echo $translation[24] ;				
+				echo "<form name=\"select all\">";
 				echo "<p><textarea name=\"key_area\" rows=\"25\" cols=\"80\" readonly=\"readonly\">".$server_key."</textarea></p>";
-				echo "<p><input type=\"button\" value=\"Select key\" onClick=\"javascript:this.form.key_area.focus();this.form.key_area.select();\"></p>";
+				echo "<p><input type=\"button\" value=\" $translation[27]\" onClick=\"javascript:this.form.key_area.focus();this.form.key_area.select();\"></p>";
 				echo "</form>";
 				
-				echo "Через несколько минут, ваш новый друг(CHAT SERVER) будет онлайн. У вас появится доступ к чат-комнатам (lobbies), и сможете завести новых друзей (что критически важно если у вас их пока нет). Текущая чат-комната это <strong>".$server_num."</strong>.";
+				echo $translation[25] ." <strong>".$server_num."</strong>.";
 				
 				// Store IP
 				
