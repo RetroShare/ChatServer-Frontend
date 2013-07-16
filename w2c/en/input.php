@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>RetroShare Chat Server - Schl&uuml;sselaustausch</title>
+	<title>RetroShare Chat Server - Key Exchange</title>
 </head>
 
 <body>
