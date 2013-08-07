@@ -1,8 +1,32 @@
+***************************************************************
+*							      *
+*		Installation Instructions		      *
+*							      *
+***************************************************************
+
+
+
 ===============================================================
 *                                                             *
 *          PART 1: RETROSHARE INSTALLATION AND SETUP          *
 *                                                             *
 ===============================================================
+
+Chatserver changes in libretroshare
+/build/retroshare/libretroshare/src/pqip3peermgr.cc
+in p3peermgr.cc replace
+setServicePermissionFlags(gpg_id,service_flags)
+with 
+setServicePermissionFlags(gpg_id,RS_SERVICE_PERM_NONE) 
+
+servicepermissions for forums/channels are already disabled in chatserver.cpp - I think: 
+if (!rsPeers->addFriend(sslId, gpgId, RS_SERVICE_PERM_DISCOVERY)) 
+only Discovery is enabled 
+just change RS_SERVICE_PERM_DISCOVERY to RS_SERVICE_PERM_NONE there 
+
+
+
+
 
 We assume that you run Ubuntu or a Debian-like distribution.
 
