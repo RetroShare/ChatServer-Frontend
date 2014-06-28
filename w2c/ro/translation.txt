@@ -1,0 +1,36 @@
+000RetroShare Server de Discuții
+001Acest instrument vă permite să schimbați cheia RetroShare cu alți utilizatori. În acest fel veți avea acces la grupurile de discuții pentru a vă face prieteni.
+002Scurtă prezentare
+003Introduceți cheia dumneavoastră RetroShare.
+004Pe pagina următoare, veți avea acces la cheia server-ului de discuții care vă va permite accesul la grupurile de discuții unde ceilalți membrii ai comunității discută.
+005Discutați cu alte persoane și schimbați între dumneavoastră cheile!
+006
+007
+008
+009
+010
+011Înregistrează o nouă cheie
+012Cheia RetroShare:
+013Cod Captcha:
+014[ Imagine diferită ]
+015Validare
+016Imposibil de a deschide fișierul
+017Cheia dumneavoastră nu este corectă! Copiați-lipiți COMPLET cheia dumneavoastră, incluzând -----BEGIN PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID-- și --LOCATION--.
+018Vă rog duceți-vă
+019înapoi
+020și încercați din nou.
+021Codul captcha nu este corect!
+022Click pe acest link pentru a adăuga server-ul de discuții:
+023Adaugă server-ul de discuții
+024În cazul unei erori, adaugă manual următoarea cheie:
+025În câteva minute, noul prieten al dumneavoastră (SERVER DE DISCUȚII) ar trebui să fie online. Veți putea să accesați grupurile de discuții și să vă faceți noi prieteni.
+026Grupul real de discuții este
+027Selectează totul
+028
+029
+030
+031
+032
+033
+034
+035
