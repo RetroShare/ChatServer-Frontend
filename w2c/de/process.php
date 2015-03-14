@@ -17,7 +17,8 @@
 
 		<?php   
 			$file_config = parse_ini_file("../config.ini") or die("Can't open config file");
-			$nogui_path = $file_config['nogui_path'];
+			//$nogui_path = $file_config['nogui_path'];
+			$key =  str_replace("\r","",$_POST['key']);
 			// Get the key
 			$key = $_POST['key'];
 			$key_sha1 = hash('sha1', $key);
