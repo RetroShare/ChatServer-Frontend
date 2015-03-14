@@ -15,44 +15,19 @@
                 }
 ?>
 
-		<?php //ini_set('display_errors', 'on'); error_reporting(E_ALL);
-			//THIS version is DEVOID of SQLITE and IP CHECKING. --Jenster 01/16/12		
-			// Open config file
+		<?php   
 			$file_config = parse_ini_file("../config.ini") or die("Can't open config file");
 			$nogui_path = $file_config['nogui_path'];
-			$error = 0 ;
 			// Get the key
-			$key = trim(preg_replace('/--LOCAL--.*/','', $_POST['key']));
+			$key = $_POST['key'];
 			$key_sha1 = hash('sha1', $key);
-			$time = time();
 			
 			// Secureimage
 			//include_once $_SERVER['DOCUMENT_ROOT'] . '/securimage/securimage.php';
 			include_once '../securimage/securimage.php';
 			$securimage = new Securimage();
 			
-			// IP address
-			if (isset($_SERVER['HTTP_X_FORWARDED_FOR']))
-				$IP = $_SERVER['HTTP_X_FORWARDED_FOR']; 
-			elseif(isset($_SERVER['HTTP_CLIENT_IP']))   
-				$IP = $_SERVER['HTTP_CLIENT_IP'];   
-			else
-				$IP = $_SERVER['REMOTE_ADDR'];  
 
-			// -------------------------
-			// Check key
-			// -------------------------
-			$chk_key = false;
-			// The "i" make the search case insensitive
-			if (preg_match("/^\s*-----BEGIN PGP PUBLIC KEY BLOCK-----[^-]+-----END PGP PUBLIC KEY BLOCK-----\s+--SSLID--[a-f0-9]+;--LOCATION--[^;]+;[\S\s]*$/", $key)) {
-				$chk_key = true;
-			} 
-			
-			else {
-				echo $translation[17] ."<br /><br />" ;
-				echo $translation[18]."<a href='javascript:history.go(-1)'>". $translation[19]."</a>" . $translation[20];
-				exit();
-			}
 
 			// -------------------------
 			// Check captcha
@@ -61,27 +36,24 @@
 			if ($securimage->check($_POST['captcha_code']) == true) {
 				$chk_securimage = true;
 			}	
-			else {
-				// the code was incorrect
-				// you should handle the error so that the form processor doesn't continue
-
-				// or you can use the following code if there is no validation or you do not know how
-				echo $translation[21] . "<br /><br />";
-				echo $translation[18]."<a href='javascript:history.go(-1)'>" . $translation[19]."</a>" . $translation[20];
-				exit();
-			}
+	
 			
-			// -------------------------
-			// Check IP
-			// -------------------------
-			
+			//$chk_securimage = true;
 			// -------------------------
 			// Now we can process
 			// -------------------------
-			if($chk_securimage and $chk_key) {
-
+			if($chk_securimage) {
+				
+			/*	echo "<BR>";
+				echo $key_sha1;
+				echo "<BR>";
+				echo $key; 
+				echo "<BR>";
+				echo "$nogui_path";
+				echo "<BR>"; 			*/
+				
 				// Write key in the NEWCERTS folder
-				$file_sha1 = fopen($nogui_path."/NEWCERTS/".$key_sha1.".rsc", 'w') or die("Can't open file");
+				$file_sha1 = fopen($nogui_path."/NEWCERTS/".$key_sha1.".rsc", 'w') or die("Can't open newcerts file");
 				fwrite($file_sha1, $key);
 				fclose($file_sha1);
 				chmod($nogui_path."/NEWCERTS/".$key_sha1.".rsc", 0666);
@@ -103,9 +75,7 @@
 				echo "</form>";
 				
 				echo $translation[25] ." <strong>".$server_num."</strong>.";
-				
-				// Store IP
-				
+		
 			}
 			
 		?>
