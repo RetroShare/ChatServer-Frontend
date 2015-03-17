@@ -53,7 +53,7 @@
 			}	
 	
 			
-			$chk_securimage = true;
+			//$chk_securimage = true;
 			// -------------------------
 			// Now we can process
 			// -------------------------
