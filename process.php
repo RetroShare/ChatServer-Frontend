@@ -11,7 +11,7 @@
 	//debugging
 	//echo 'lang= '.$_REQUEST['lang'] . "<BR>"; // $_REQUEST catches $_GET and $_POST
 	
-	$available_lang = array("de", "en", "es", "fr", "hu", "it", "pt", "ro", "ru", "se");
+	$available_lang = array("de", "en", "es", "fr", "hu", "it", "pt", "ro", "ru", "se", "by");
 	if (in_array($_REQUEST['lang'], $available_lang)) {
 		$lang_file = "i18n/".$_REQUEST['lang']."_lang.txt" ;	    
 	}
