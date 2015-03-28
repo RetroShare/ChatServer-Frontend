@@ -72,7 +72,7 @@
 			<fieldset>
 				<table border='0'>
 				<tr><td valign="top"><?php echo $translation[12] ?></td><td><textarea name="key" rows="10" cols="85"></textarea></td></tr>
-				<tr><td><?php echo $translation[13] ?><br/><img id="captcha" src="../securimage/securimage_show.php" alt="CAPTCHA Image"></img></td><td><input name="captcha_code" size="10" maxlength="6" type="text"></input><a href="#" onclick="document.getElementById('captcha').src = '../securimage/securimage_show.php?' + Math.random(); return false"><?php echo $translation[14] ?></a></td></tr>
+				<tr><td><?php echo $translation[13] ?><br/><img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image"></img></td><td><input name="captcha_code" size="10" maxlength="6" type="text"></input><a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false"><?php echo $translation[14] ?></a></td></tr>
 				</table>
 				<input value="<?php echo $translation[15] ?>" type="submit"></input>
 			</fieldset>
