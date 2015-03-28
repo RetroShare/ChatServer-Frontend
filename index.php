@@ -21,7 +21,7 @@
     </tr>
     <tr>
         <td><a href="key_add.php?lang=en"><img src="img/flag/United_Kingdom.png" align="absmiddle"  height="24" width="40" alt="English">English<img src="img/flag/United_States.png" align="absmiddle"  height="24" width="40"  alt="English"></a></td>
-        <td rowspan="6"><center>
+        <td rowspan="7"><center>
 <?php include("ascii/pirate.txt"); ?>
 </center>
 </td>
