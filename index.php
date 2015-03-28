@@ -20,7 +20,7 @@
                                                                                                         </code></pre></center></td>
     </tr>
     <tr>
-        <td><a href="key_add.php?lang=en"><img src="img/flag/United_Kingdom.png" align="absmiddle"  height="24" width="40" alt="English">English<img src="img/flag/United_States.png" align="absmiddle"  alt="English"></a></td>
+        <td><a href="key_add.php?lang=en"><img src="img/flag/United_Kingdom.png" align="absmiddle"  height="24" width="40" alt="English">English<img src="img/flag/United_States.png" align="absmiddle"  height="24" width="40"  alt="English"></a></td>
         <td rowspan="6"><center>
 <?php include("ascii/pirate.txt"); ?>
 </center>
@@ -29,7 +29,7 @@
     </tr>
     <tr>
         <td><a href="key_add.php?lang=fr"><img src="img/flag/France.png" align="absmiddle" height="24" width="40"  alt="Français">Français</a></td>
-        <td><a href="key_add.php?lang=de"><img src="img/flag/Germany.png" align="absmiddle" height="24" width="40" alt="Deutsch">Deutsch<img src="img/Austria.png" align="absmiddle"  alt="Austria"></a></td>
+        <td><a href="key_add.php?lang=de"><img src="img/flag/Germany.png" align="absmiddle" height="24" width="40" alt="Deutsch">Deutsch<img src="img/flag/Austria.png" align="absmiddle"  height="24" width="40" alt="Austria"></a></td>
     </tr>
     <tr>
         <td><a href="key_add.php?lang=ru"><img src="img/flag/Russian.png" align="absmiddle" height="24" width="40"  alt="Русский">Русский</a></td>
