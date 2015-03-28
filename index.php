@@ -20,31 +20,31 @@
                                                                                                         </code></pre></center></td>
     </tr>
     <tr>
-        <td><a href="key_add.php?lang=en"><img src="img/flag/UnitedKingdom.png" align="absmiddle"  alt="English">English<img src="img/UnitedStates.png" align="absmiddle"  alt="English"></a></td>
+        <td><a href="key_add.php?lang=en"><img src="img/flag/United_Kingdom.png" align="absmiddle"  height="24" width="40" alt="English">English<img src="img/flag/United_States.png" align="absmiddle"  alt="English"></a></td>
         <td rowspan="6"><center>
 <?php include("ascii/pirate.txt"); ?>
 </center>
 </td>
-        <td><a href="key_add.php?lang=es"><img src="img/flag/Spain.png" align="absmiddle"  alt="Español">Español</a></td>
+        <td><a href="key_add.php?lang=es"><img src="img/flag/Spain.png" align="absmiddle" height="24" width="40" alt="Español">Español</a></td>
     </tr>
     <tr>
-        <td><a href="key_add.php?lang=fr"><img src="img/flag/France.png" align="absmiddle"  alt="Français">Français</a></td>
-        <td><a href="key_add.php?lang=de"><img src="img/flag/Germany.png" align="absmiddle"  alt="Deutsch">Deutsch<img src="img/Austria.png" align="absmiddle"  alt="Austria"></a></td>
+        <td><a href="key_add.php?lang=fr"><img src="img/flag/France.png" align="absmiddle" height="24" width="40"  alt="Français">Français</a></td>
+        <td><a href="key_add.php?lang=de"><img src="img/flag/Germany.png" align="absmiddle" height="24" width="40" alt="Deutsch">Deutsch<img src="img/Austria.png" align="absmiddle"  alt="Austria"></a></td>
     </tr>
     <tr>
-        <td><a href="key_add.php?lang=ru"><img src="img/flag/Russia.png" align="absmiddle"  alt="Русский">Русский</a></td>
-        <td><a href="key_add.php?lang=it"><img src="img/flag/Italy.png" align="absmiddle"  alt="Italiano">Italiano</a></td>
+        <td><a href="key_add.php?lang=ru"><img src="img/flag/Russian.png" align="absmiddle" height="24" width="40"  alt="Русский">Русский</a></td>
+        <td><a href="key_add.php?lang=it"><img src="img/flag/Italy.png" align="absmiddle"  height="24" width="40" alt="Italiano">Italiano</a></td>
     </tr>
     <tr>
-        <td><a href="key_add.php?lang=hu"><img src="img/flag/Hungary.png" align="absmiddle"  alt="Magyar">Magyar</a></td>
-        <td><a href="key_add.php?lang=se"><img src="img/flag/Sweden.png" align="absmiddle"  alt="Svenska">Svenska</a></td>
+        <td><a href="key_add.php?lang=hu"><img src="img/flag/Hungary.png" align="absmiddle"  height="24" width="40" alt="Magyar">Magyar</a></td>
+        <td><a href="key_add.php?lang=se"><img src="img/flag/Sweden.png" align="absmiddle"  height="24" width="40" alt="Svenska">Svenska</a></td>
     </tr>
     <tr>
-        <td><a href="key_add.php?lang=pt"><img src="img/flag/Portugal.png" align="absmiddle"  alt="Porttugal">Portuguese<img src="img/Brazil.png" align="absmiddle"  alt="Brazil"></a></td>
+        <td><a href="key_add.php?lang=pt"><img src="img/flag/Portugal.png" align="absmiddle"  height="24" width="40" alt="Porttugal">Portuguese<img src="img/flag/Brazil.png" align="absmiddle"  height="24" width="40" alt="Brazil"></a></td>
         <td><a href="unknown.html"><img src="img/Anonymous.png" align="absmiddle"  alt="Anon">???</a></td> 
     </tr>    
     <tr>
-        <td><a href="key_add.php?lang=by"><img src="img/flag/Belarus.png" align="absmiddle"  alt="Belarus">Belarus</a></td>    
+        <td><a href="key_add.php?lang=by"><img src="img/flag/Belarus.png" align="absmiddle"  height="24" width="40" alt="Belarus">Belarus</a></td>    
         <td><a href="unknown.html"><img src="img/Anonymous.png" align="absmiddle"  alt="Anon">???</a></td> 
     </tr>            
     <tr>
