@@ -1,0 +1,36 @@
+000RetroShare diskusný server
+001Tento nástroj vám pomôže zameniť váš RetroShare kľúč. Dá vám prístup na miestnosti rozhovorov aby ste si navolili priateľov.
+002Krátky úvod
+003Zadať RetroShare kľúč.
+004Na ďalšej strane budete mať kľúč do serveru rozhovoru ktorý vám umožní vstúpiť do miestností kde sa rozprávajú ostatní členovia komunity.
+005Rozprávajte sa s ostatnými ľuďmi a vymenťe s nimi kľúč!
+006
+007
+008
+009
+010
+011Registrovať nový kľúč
+012RetroShare kľúč:
+013Captcha kód:
+014[ Iný Obrázok ]
+015Overiť
+016Nedá sa otvoriť súbor
+017Váš kľúč je nesprávny! Skopírujte CELÝ KĽÚČ, vrátane -----BEGIN PGP PUBLIC KEY BLOCK-----, -----END PGP PUBLIC KEY BLOCK-----, --SSLID-- a --LOCATION--.
+018Prosím choďte
+019späť
+020a skúste znovu.
+021Kód v obrázku je nesprávny!
+022Kliknite na nasledovný odkaz na pridanie diskusného serveru:
+023Pridať diskusný server
+024V prípade problémov pridajte ručne nasledovný kľúč:
+025Za pár minút váš spriatelený (DISKUSNÝ SERVER) bude dostupný. Budete môcť vstúpiť do miestností rozhovoru a pridávať priateľov.
+026Aktuálna miestnosť rozhovoru
+027Vybrať všetko
+028
+029
+030
+031
+032
+033
+034
+035
